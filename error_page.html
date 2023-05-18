@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+
+    <!-- <link rel="stylesheet" href="\.bootstrap\bootstrap-5.2.0-dist\css\bootstrap.min.css"> -->
+    <script src="\.Angula_js\angular.min.js"></script>
+    <style>
+        body{
+            background-color: #fcb82f;
+            /* background-color: blanchedalmond; */
+            /* background-image: url("/.ira_ECW_project/images/error_404_from_freepik.jpg");
+            background-repeat: no-repeat; */
+            /* background-size: cover; */
+        }
+
+        #errorText{
+            /* font-size: 72px; */
+            background: -webkit-linear-gradient(rgb(135, 44, 163), #333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+       
+
+        .colz{
+            text-align: center;
+            height: 493px;
+            display: flex;
+            flex-direction: column;  /*THIS IS THE CODE THAT SOLVED EVERYTHOING!!!*/
+        }
+
+
+        /*         
+        .vertical-center{
+            min-height: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        } */
+       
+        /* div{
+            text-align: center;
+            width: 100%;
+           
+        } */
+        
+        /* #leftDiv{
+            background: -webkit-linear-gradient(rgb(128, 34, 156), rgb(82, 74, 74));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        } */
+
+        /* *{
+           margin: 0!important; 
+           padding: 0!important;
+        } */
+
+        /* .container{
+            max-width: none;
+        }
+        .container-fluid{
+            max-width: none;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <div class="container-fluid w-100"> -->
+
+        <div class="row m-0 p-0 " id="subBodyTop">
+        
+            <div class="col-md-6 m-0 p-0 colz vertical-center" id="leftDiv" style=" background-color: #fcb82f;">
+                <br><br><br><br><br>
+                <h1 id="errorText">ERROR 404</h1>
+                <br>
+                <h3> <i> The page you requested could not be found</i></h3>
+                <br>
+                <h5 >Our <i>Village People</i> have struck again &#128557</h5><!-- are at work again &#128542 -->
+            </div>
+
+            <div class="col-md-6 m-0 p-0 colz">
+                <img src="/.ira_ECW_project/images/error_404_from_freepik.jpg" alt="error pic">
+                <!-- <h1 style="left: 320px; bottom: 415px; position: absolute;"><b>OOPS!</b></h1> -->
+                <!-- <p style="left: 220px; bottom: 390px; position: absolute;"><b>The page you requested could not be found</b> </p> -->
+            </div>
+        </div>
+    <!-- </div> -->
+    
+    <!-- <script src="\.bootstrap\bootstrap-5.2.0-dist\js\bootstrap.js"></script> -->
+</body>
+</html>

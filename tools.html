@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <!-- <link rel="stylesheet" href="\.bootstrap\bootstrap-5.2.0-dist\css\bootstrap.min.css"> -->
+    <script src="\.Angula_js\angular.min.js"></script>
+
+    <script src="/.jquery/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="/Arinze Chinaza AngularJs/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="/Arinze Chinaza AngularJs/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/js/all.min.js"></script>
+
+    
+    <style>
+      /* style bellow is for the page */
+        .card-img-top:not(#headerImage){
+            min-height: 216px;
+            max-height: 216px;
+            max-width: 300px;
+        }
+        .col-md-4{
+            text-align: center;
+            display: flex;
+            flex-direction: column; 
+        }
+
+      /* style bellow is just for star rating */
+      .rating {
+            border: none;
+            float: left;
+            margin: 0px 0px 0px 28px;
+        }
+        .rating>input {
+            display: none;
+        }
+        .rating>label:before {
+            margin-top: 2px;
+            padding: 0px 5px 0px 5px;
+            font-size: 1.25em;
+            font-family: FontAwesome;
+            display: inline-block;
+            content: "\f005";
+        }
+        .rating>.half:before {
+            content: "\f089";
+            position: absolute;
+        }
+        .rating>label {
+            color: grey;
+            background-color: none;
+            float: right;
+            margin: 4px 1px 0px 0px;
+            height: 25px;
+        }
+
+        /***** CSS Magic to Highlight Stars on Hover *****/
+        .rating:not(:checked)>label:hover,
+        .rating:not(:checked)>label:hover~label {
+            color: gold !important;
+            cursor: pointer;
+        }
+        .rating>input:checked+label:hover,
+        .rating>label:hover~input:checked~label,
+        .rating>input:checked~label:hover~label {
+            color: gold !important;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container-fluid"> -->
+
+    <div class="row mt-2" id="headerRow">
+        <div class="col-md-12">
+            <div class="card mb-3 rounded-0" style="text-align: center;">
+                <img src="/.ira_ECW_project/images/oak-wooden-background.jpg" id="headerImage" class="card-img-top rounded-0" style="height: 200px;" alt="...">
+                <div class="card-body bg-light rounded-0">
+                  <h2 class="card-title">OUR PRODUCT LIST</h2>
+                  <p class="card-text">Or like we prefere to call them... the tools of the trade</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-8 mb-4  justify-content-around" id="row1">
+        
+        <div class="col-md-4 align-items-center ">
+            <div class="card p-1 m-1" style="width: 18rem;">
+                <img src="/.ira_ECW_project/images/grey_myabe_clear.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-light">
+                  <h5 class="card-title">Ụtari</h5>
+                  <p class="card-text">
+                    These ultra modern set of 4 comes with classy all black leather handles for easy grip to effectively mitigate recoil.  
+                  </p>
+                  <p>₦2,600.00</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                  <!--  -->
+                  
+                  <fieldset class="rating">
+                    <input type="radio" id="" name="" value="5" /><label class="full" for=""></label>
+
+                    <input type="radio" id="" name="" value="4" /><label class="full" for=""></label>
+
+                    <input type="radio" id="" name="" value="3" /><label class="full" for=""></label>
+
+                    <input type="radio" id="" name="" value="2" /><label class="full" for=""></label>
+
+                    <input type="radio" id="" name="" value="1" /><label class="full" for=""></label>
+
+                  </fieldset>
+                  <!--  -->
+                </div>
+
+              </div>
+        </div>
+        <div class="col-md-4 align-items-center">
+            <div class="card p-1 m-1 bg-light" style="width: 18rem;">
+                <img src="/.ira_ECW_project/images/good_grip_handle.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Candy sticks</h5>
+                  <p class="card-text">
+                    These aesthetic set of 4 are available in a variety of stylish & coloful rubber handles for easy grip & comfort.  
+                  </p>
+                  <p>₦2,700.00</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                  <fieldset class="rating">
+                    <input type="radio" id="field1_star5" name="rating1" value="5" /><label class="full" for="field1_star5"></label>
+            
+                    <input type="radio" id="field1_star4" name="rating1" value="4" /><label class="full" for="field1_star4"></label>
+            
+                    <input type="radio" id="field1_star3" name="rating1" value="3" /><label class="full" for="field1_star3"></label>
+            
+                    <input type="radio" id="field1_star2" name="rating1" value="2" /><label class="full" for="field1_star2"></label>
+            
+                    <input type="radio" id="field1_star1" name="rating1" value="1" /><label class="full" for="field1_star1"></label>
+                  </fieldset>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 align-items-center">
+            <div class="card p-1 m-1" style="width: 18rem;">
+                <img src="/.ira_ECW_project/images/il_794xN.2090338792_18ni.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-light">
+                  <h5 class="card-title">Pankere</h5>
+                  <p class="card-text">
+                    These original style canes have a nostalgic retro look and feel, guaranteed to instill the traditions of old.
+                  </p>
+                  <p>₦2,300.00</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                  <fieldset class="rating">
+                    <input type="radio" id="field1_star5" name="rating1" value="5" /><label class="full" for="field1_star5"></label>
+            
+                    <input type="radio" id="field1_star4" name="rating1" value="4" /><label class="full" for="field1_star4"></label>
+            
+                    <input type="radio" id="field1_star3" name="rating1" value="3" /><label class="full" for="field1_star3"></label>
+            
+                    <input type="radio" id="field1_star2" name="rating1" value="2" /><label class="full" for="field1_star2"></label>
+            
+                    <input type="radio" id="field1_star1" name="rating1" value="1" /><label class="full" for="field1_star1"></label>
+                  </fieldset>
+
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4 mb-4  justify-content-around" id="row2">
+        
+        <div class="col-md-4 align-items-center">
+            <div class="card p-1 m-1 bg-light" style="width: 18rem;">
+                <img src="/.ira_ECW_project/images/kbk3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Koboko</h5>
+                  <p class="card-text">
+                    With Leather forged from the hides of stubon goats, One whip of this is sure to administer Instant Regret to its recipients.
+                  </p>
+                  <p>₦5,350.00</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                  <fieldset class="rating">
+                    <input type="radio" id="field1_star5" name="rating1" value="5" /><label class="full" for="field1_star5"></label>
+            
+                    <input type="radio" id="field1_star4" name="rating1" value="4" /><label class="full" for="field1_star4"></label>
+            
+                    <input type="radio" id="field1_star3" name="rating1" value="3" /><label class="full" for="field1_star3"></label>
+            
+                    <input type="radio" id="field1_star2" name="rating1" value="2" /><label class="full" for="field1_star2"></label>
+            
+                    <input type="radio" id="field1_star1" name="rating1" value="1" /><label class="full" for="field1_star1"></label>
+                  </fieldset>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 align-items-center">
+            <div class="card p-1 m-1" style="width: 18rem;">
+                <img src="/.ira_ECW_project/images/koboko_wide.jpg" class="card-img-top" alt="...">
+                <div class="card-body bg-light">
+                  <h5 class="card-title">Bulala</h5>
+                  <p class="card-text">
+                    Every african parents bestie, just from its name you can tell that you're in for a treat... and not the good kind. 
+                  </p>
+                  <p>₦4,200.00</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                  <fieldset class="rating">
+                    <input type="radio" id="field1_star5" name="rating1" value="5" /><label class="full" for="field1_star5"></label>
+            
+                    <input type="radio" id="field1_star4" name="rating1" value="4" /><label class="full" for="field1_star4"></label>
+            
+                    <input type="radio" id="field1_star3" name="rating1" value="3" /><label class="full" for="field1_star3"></label>
+            
+                    <input type="radio" id="field1_star2" name="rating1" value="2" /><label class="full" for="field1_star2"></label>
+            
+                    <input type="radio" id="field1_star1" name="rating1" value="1" /><label class="full" for="field1_star1"></label>
+                  </fieldset>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 align-items-center">
+            <div class="card p-1 m-1 bg-light" style="width: 18rem;">
+                <img src="/.ira_ECW_project/images/kbk1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lasso Of Tears</h5>
+                  <p class="card-text">
+                    You've heard of the mythical lasso of truth weilded by the amazon warriors, well now meet its long lost relative.
+                    <!-- They say there are over a thousnd ways to cry, well meet reason number 1 ... sure to make you change your ways. -->
+                  </p>
+                  <p>₦5,900.00</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                  <fieldset class="rating">
+                    <input type="radio" id="field1_star5" name="rating1" value="5" /><label class="full" for="field1_star5"></label>
+            
+                    <input type="radio" id="field1_star4" name="rating1" value="4" /><label class="full" for="field1_star4"></label>
+            
+                    <input type="radio" id="field1_star3" name="rating1" value="3" /><label class="full" for="field1_star3"></label>
+            
+                    <input type="radio" id="field1_star2" name="rating1" value="2" /><label class="full" for="field1_star2"></label>
+            
+                    <input type="radio" id="field1_star1" name="rating1" value="1" /><label class="full" for="field1_star1"></label>
+                  </fieldset>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="row mt-4 mb-8  justify-content-around" id="row3">
+        
+        <div class="col-md-4 align-items-center">
+            <div class="card p-1 m-1 mb-4 bg-light" style="width: 18rem;">
+                <img src="/.ira_ECW_project/images/plenty_cane_unclear.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Infinity Strokes</h5>
+                  <p class="card-text">
+                    Never run out of supply again, this bundle will have you wishing you had an extra pair of hands to weild them all.
+                  </p>
+                  <p>₦21,500.00</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                  <fieldset class="rating">
+                    <input type="radio" id="field1_star5" name="rating1" value="5" /><label class="full" for="field1_star5"></label>
+            
+                    <input type="radio" id="field1_star4" name="rating1" value="4" /><label class="full" for="field1_star4"></label>
+            
+                    <input type="radio" id="field1_star3" name="rating1" value="3" /><label class="full" for="field1_star3"></label>
+            
+                    <input type="radio" id="field1_star2" name="rating1" value="2" /><label class="full" for="field1_star2"></label>
+            
+                    <input type="radio" id="field1_star1" name="rating1" value="1" /><label class="full" for="field1_star1"></label>
+                  </fieldset>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 align-items-center">
+            <div class="card p-1 m-1 mb-4" style="width: 18rem;">
+                <img src="/.ira_ECW_project/images/kbk2.jpeg" class="card-img-top" alt="pic8">
+                <div class="card-body bg-light">
+                  <h5 class="card-title">Kyuubi</h5>
+                  <p class="card-text">
+                    This Anime inspired masterpiece is truly a work of art, its signature 9 tails are a frightening sight for anyone to see. 
+                  </p>
+                  <p>₦4,700.00</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                  <fieldset class="rating">
+                    <input type="radio" id="field1_star5" name="rating1" value="5" /><label class="full" for="field1_star5"></label>
+            
+                    <input type="radio" id="field1_star4" name="rating1" value="4" /><label class="full" for="field1_star4"></label>
+            
+                    <input type="radio" id="field1_star3" name="rating1" value="3" /><label class="full" for="field1_star3"></label>
+            
+                    <input type="radio" id="field1_star2" name="rating1" value="2" /><label class="full" for="field1_star2"></label>
+            
+                    <input type="radio" id="field1_star1" name="rating1" value="1" /><label class="full" for="field1_star1"></label>
+                  </fieldset>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 align-items-center">
+            <div class="card p-1 m-1 mb-4 bg-light" style="width: 18rem;">
+                <img src="/.ira_ECW_project/images/set_of_five.jpg" class="card-img-top" alt="pic9">
+                <div class="card-body">
+                  <h5 class="card-title">Pankere + +</h5>
+                  <p class="card-text">
+                    Pre-owned by top notch deciplinarians in various institutions, these vintage tools have been battle tested.
+                  </p>
+                  <p>₦3,100.00</p>
+                  <a href="#" class="btn btn-primary">Add To Cart</a>
+                  <fieldset class="rating">
+                    <input type="radio" id="field1_star5" name="rating1" value="5" /><label class="full" for="field1_star5"></label>
+            
+                    <input type="radio" id="field1_star4" name="rating1" value="4" /><label class="full" for="field1_star4"></label>
+            
+                    <input type="radio" id="field1_star3" name="rating1" value="3" /><label class="full" for="field1_star3"></label>
+            
+                    <input type="radio" id="field1_star2" name="rating1" value="2" /><label class="full" for="field1_star2"></label>
+            
+                    <input type="radio" id="field1_star1" name="rating1" value="1" /><label class="full" for="field1_star1"></label>
+                  </fieldset>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+    
+</body>
+</html>
